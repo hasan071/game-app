@@ -523,9 +523,9 @@
     .mainContainer .content .Main .part1 {
         flex-wrap: wrap;
     }
-    .mainContainer .content .Main .part1 .img {
+    .mainContainer .content .Main .part1 .img img {
         width: 100%;
-        text-align: center;
+        /* text-align: center; */
     }
     .mainContainer .content .Main .part1 .details {
         text-align: center;
@@ -569,7 +569,8 @@
     .mainContainer .header ul {
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 10px;
         margin-top: 20px;
     }
 }

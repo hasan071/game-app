@@ -378,6 +378,9 @@
     .mainContainer .content .popular .cards {
         flex-wrap: wrap;
     }
+    .mainContainer .content .popular .cards .card {
+        width: 100%;
+    }
 }
 
 @media (max-width: 500px) {
@@ -394,7 +397,8 @@
     .mainContainer .header ul {
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 10px;
         margin-top: 20px;
     }
 }

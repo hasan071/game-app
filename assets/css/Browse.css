@@ -465,6 +465,11 @@
     .mainContainer .content .underHead .topDownload .games {
         width: 100%;
     }
+    .mainContainer .content .underHead .topDownload .games .game {
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
     .mainContainer .content .underHead .topDownload h2 {
         font-size: 23px;
     }
@@ -493,7 +498,8 @@
     .mainContainer .header ul {
         flex-wrap: wrap;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 10px;
         margin-top: 20px;
     }
     .mainContainer .content .underHead .topDownload h2 {
