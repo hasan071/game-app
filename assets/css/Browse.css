@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --DarkGray: #212121;
+    --LightGray: #3e3e3e;
+    --PinkColor: #EA618F;
+    --MainFont: "Tektur", sans-serif;
+    --SecondryFont: "Caveat", cursive;
+}
+
+::selection {
+    color: aliceblue;
+    background-color: var(--PinkColor);
+}
+
+.mainContainer {
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding: 3vh 7% 2vh;
+}
+
+.mainContainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer .header .logo {
+    width: 15%;
+}
+
+.mainContainer .header .logo img {
+    width: 100%;
+}
+
+.mainContainer .header .hline {
+    width: 1px;
+    height: 60px;
+    background-color: var(--LightGray);
+}
+
+.mainContainer .header .search {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--LightGray);
+    border-radius: 25px;
+    padding: 9px 15px;
+    color: #555;
+    font-size: 20px;
+}
+
+.mainContainer .header .search input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: var(--SecondryFont);
+    outline: none;
+    color: var(--DarkGray);
+}
+
+.mainContainer .header ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.mainContainer .header ul li a {
+    color: var(--LightGray);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.mainContainer .header ul li a:hover,
+.mainContainer .header ul .active a {
+    color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--LightGray);
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: 1s;
+}
+
+.mainContainer .header ul .profile:hover {
+    background-color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile:hover a {
+    color: aliceblue;
+}
+
+
+.mainContainer .header ul .profile a {
+    color: var(--DarkGray);
+}
+
+
+.mainContainer .header ul .profile img {
+    border-radius: 50%;
+}
+
+.mainContainer .content {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGray);
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.mainContainer .content .underHead {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mainContainer .content .featuredGames {
+    width: 65%;
+    background-color: var(--DarkGray);
+    padding: 4vh 3%;
+    border-radius: 30px;
+}
+
+.mainContainer .content .featuredGames h2 {
+    color: var(--PinkColor);
+    font-family: var(--MainFont);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.mainContainer .content .featuredGames h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.mainContainer .content .featuredGames .cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainContainer .content .featuredGames .cards .card .img img {
+   border-radius: 20px;
+}
+
+.mainContainer .content .featuredGames .cards .card .data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+.mainContainer .content .featuredGames .cards .card .data .dataLeft h3 {
+    color: aliceblue;
+    font-family: var(--SecondryFont);
+    font-weight: bold;
+}
+
+.mainContainer .content .featuredGames .cards .card .data .dataLeft p {
+    color: var(--LightGray);
+    font-family: var(--SecondryFont);
+    font-size: 18px;
+}
+
+.mainContainer .content .featuredGames .cards .card .data .dataRight {
+    color: aliceblue;
+    font-family: var(--MainFont);
+    font-size: 15px;
+}
+
+.mainContainer .content .featuredGames .cards .card .data .dataRight .fa-star {
+    color: yellow;
+}
+
+.mainContainer .content .featuredGames .cards .card .data .dataRight .fa-download {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .topDownload {
+    width: 35%;
+    background-color: var(--DarkGray);
+    border-radius: 30px;
+    padding: 4vh 3%;
+}
+
+.mainContainer .content .topDownload h2,
+.mainContainer .content .popular h2 {
+    color: var(--PinkColor);
+    font-family: var(--MainFont);
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.mainContainer .content .topDownload h2 span,
+.mainContainer .content .popular h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.mainContainer .content .topDownload .game {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.mainContainer .content .topDownload .game .img img {
+    width: 100px;
+    border-radius: 20px;
+}
+
+.mainContainer .content .topDownload .game .identify .logo {
+    display: flex;
+    gap: 20px;
+}
+
+.mainContainer .content .topDownload .game .identify h3 {
+    color: aliceblue;
+    font-family: var(--SecondryFont);
+}
+
+.mainContainer .content .topDownload .game .identify p {
+    color: var(--LightGray);
+    font-family: var(--SecondryFont);
+    font-size: 18px;
+}
+
+.mainContainer .content .topDownload .game .identify .logo p {
+    color: aliceblue;
+    font-family: var(--MainFont);
+    font-size: 15px;
+}
+
+.mainContainer .content .topDownload .game .identify .logo .fa-star {
+    color: yellow;
+}
+
+.mainContainer .content .topDownload .game .identify .logo .fa-download {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .topDownload .game .download {
+    background-color: var(--LightGray);
+    width: 10%;
+    height: 30px;
+    border-radius: 50%;
+    color: var(--PinkColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .content .topDownload .view {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mainContainer .content .topDownload .view a {
+    text-decoration: none;
+    color: var(--PinkColor);
+    font-weight: bold;
+    font-family: var(--SecondryFont);
+    transition: 1s;
+}
+
+.mainContainer .content .topDownload .view a:hover {
+    color: aliceblue;
+}
+
+.mainContainer .content .title h2 {
+    color: var(--PinkColor);
+    font-family: var(--MainFont);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.mainContainer .content .title h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.mainContainer .content .LIVE {
+    text-align: center;
+}
+
+.mainContainer .content .liveStream {
+    width: 100%;
+    padding: 4vh 3%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.mainContainer .content .liveStream .card {
+    width: 33%;
+    border: 1px solid #555;
+    padding: 3vh 2%;
+    border-radius: 20px;
+}
+
+.mainContainer .content .liveStream .card img {
+    border-radius: 50%;
+}
+
+.mainContainer .content .LIVE button,
+.mainContainer .content .popular button {
+    border: none;
+    font-family: var(--SecondryFont);
+    transition: 1s;
+    background-color: var(--PinkColor);
+    color: aliceblue;
+    text-align: center;
+    padding: 1vh 3%;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: large;
+    
+}
+
+.mainContainer .content .LIVE button:hover,
+.mainContainer .content .popular button:hover {
+    background-color: aliceblue;
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .liveStream .card a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: var(--MainFont);
+    transition: 1s;
+}
+
+.mainContainer .content .liveStream .card a:hover {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .liveStream .card p {
+    color: #556;
+    font-family: var(--SecondryFont);
+}
+
+.mainContainer .content .liveStream .card p span {
+    color: aliceblue;
+}
+
+.mainContainer .content .popular {
+    width: 100%;
+    background-color: var(--DarkGray);
+    border-radius: 30px;
+    padding: 4vh 3%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.mainContainer .content .popular .lives {
+    display: flex;
+   justify-content: space-around;
+}
+
+.mainContainer .content .popular .lives .live .img img {
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.mainContainer .content .popular .lives .live .underImage {
+    display: flex;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+
+.mainContainer .content .popular .lives .live .underImage p {
+    color: var(--PinkColor);
+    margin-bottom: 5px;
+    font-family: var(--SecondryFont);
+    text-align: left;
+}
+
+.mainContainer .content .popular .lives .live .underImage .paragraph .fa-circle-check {
+    color: aliceblue;
+    background-color: var(--PinkColor);
+    border-radius: 50%;
+}
+
+.mainContainer .content .popular .lives .live .underImage .paragraph h3 {
+    color: aliceblue;
+    font-family: var(--MainFont);
+    font-weight: bold;
+    text-align: left;
+}
+
+.mainContainer .footer {
+    width: 100%;
+    text-align: center;
+    color: rgba(240, 248, 255, 0.501);
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+    margin: 50px 0 10px;
+}
+
+.mainContainer .footer a {
+    color: var(--PinkColor);
+    text-decoration: none;
+}
+
+.mainContainer .footer span {
+    font-family: var(--MainFont);
+    color: var(--PinkColor);
+}
+
+
+
+@media (max-width: 1250px) {
+    .mainContainer .header {
+        flex-wrap: wrap;
+    }
+    .mainContainer .header .logo {
+        width: 20%;
+    }
+    .mainContainer .header .search {
+        width: 50%;
+    }
+    .mainContainer .header ul {
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .mainContainer .content .underHead {
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .underHead .featuredGames .cards {
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .underHead .featuredGames h2 {
+        font-size: 23px;
+    }
+    /* .mainContainer .content .underHead .topDownload .game {
+        flex-wrap: wrap;
+    } */
+    .mainContainer .content .underHead .topDownload {
+        width: 100%;
+    }
+    .mainContainer .content .underHead .topDownload .games {
+        width: 100%;
+    }
+    .mainContainer .content .underHead .topDownload h2 {
+        font-size: 23px;
+    }
+    .mainContainer .content .LIVE .liveStream {
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .LIVE .liveStream .card {
+        width: 100%;
+    }
+    .mainContainer .content .popular .lives {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainContainer .header {
+        flex-wrap: wrap;
+    }
+    .mainContainer .header .logo {
+        width: 80%;
+    }
+    .mainContainer .header .search {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .mainContainer .header ul {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .mainContainer .content .underHead .topDownload h2 {
+        font-size: 15px;
+    }
+}

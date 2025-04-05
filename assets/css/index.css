@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DarkGray: #212121;
+    --LightGray: #3e3e3e;
+    --PinkColor: #EA618F;
+    --MainFont: "Tektur", sans-serif;
+    --SecondryFont: "Caveat", cursive;
+}
+
+::selection {
+    color: aliceblue;
+    background-color: var(--PinkColor);
+}
+
+.mainContainer {
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding: 3vh 7% 2vh;
+}
+
+.mainContainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer .header .logo {
+    width: 15%;
+}
+
+.mainContainer .header .logo img {
+    width: 100%;
+}
+
+.mainContainer .header .hline {
+    width: 1px;
+    height: 60px;
+    background-color: var(--LightGray);
+}
+
+.mainContainer .header .search {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--LightGray);
+    border-radius: 25px;
+    padding: 9px 15px;
+    color: #555;
+    font-size: 20px;
+}
+
+.mainContainer .header .search input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: var(--SecondryFont);
+    outline: none;
+    color: var(--DarkGray);
+}
+
+.mainContainer .header ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.mainContainer .header ul li a {
+    color: var(--LightGray);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.mainContainer .header ul li a:hover,
+.mainContainer .header ul .active a {
+    color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--LightGray);
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: 1s;
+}
+
+.mainContainer .header ul .profile:hover {
+    background-color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile:hover a {
+    color: aliceblue;
+}
+
+
+.mainContainer .header ul .profile a {
+    color: var(--DarkGray);
+}
+
+
+.mainContainer .header ul .profile img {
+    border-radius: 50%;
+}
+
+.mainContainer .content {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGray);
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.mainContainer .content .banner {
+    width: 100%;
+    background-image: url(../Images/banner-bg.jpg);
+    background-size: 100% 100%;
+    padding: 7vh 5%;
+    border-radius: 30px;
+    color: aliceblue;
+}
+
+.mainContainer .content .banner h1 span {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .banner h3 {
+    font-family: var(--SecondryFont);
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.mainContainer .content .banner h1 {
+    font-family: var(--MainFont);
+    font-size: 45px;
+    margin: 35px 0;
+}
+
+.mainContainer .content .banner button,
+.mainContainer .content .popular button,
+.mainContainer .content .library button {
+    background-color: var(--PinkColor);
+    color: aliceblue;
+    font-family: var(--SecondryFont);
+    border-radius: 20px;
+    border: none;
+    font-size: 25px;
+    padding: 5px 20px;
+    transition: 1s;
+}
+
+.mainContainer .content .banner button:hover,
+.mainContainer .content .popular button:hover,
+.mainContainer .content .library button:hover {
+    background-color: aliceblue;
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .popular {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGray);
+    margin-top: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.mainContainer .content .popular h2,
+.mainContainer .content .library h2 {
+    color: var(--PinkColor);
+    font-family: var(--MainFont);
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.mainContainer .content .popular h2 span,
+.mainContainer .content .library h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.mainContainer .content .popular .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.mainContainer .content .popular .cards .card {
+    width: 23%;
+    background-color: var(--LightGray);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.mainContainer .content .popular .cards .card img {
+    width: 100%;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.mainContainer .content .popular .cards .card .data {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: #989898;
+    font-family: var(--SecondryFont);
+}
+.mainContainer .content .popular .cards .card .data h3 {
+    color: aliceblue;
+    font-family: var(--MainFont);
+}
+
+.mainContainer .content .popular .cards .card .data .fa-star {
+    color: yellow;
+}
+
+.mainContainer .content .popular .cards .card .data .fa-download {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .popular .cards .card img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.mainContainer .content .popular .cards .card .img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.mainContainer .content .library {
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding: 5vh 5%;
+    border-radius: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mainContainer .content .library .gaming {
+    width: 100%;
+}
+
+.mainContainer .content .library .gaming .game {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mainContainer .content .library .gaming .game img {
+    border-radius: 20px;
+}
+
+.mainContainer .content .library .gaming .game h3 {
+    color: aliceblue;
+    font-family: var(--MainFont);
+}
+
+.mainContainer .content .library .gaming .game p {
+    color: #666;
+    font-family: var(--SecondryFont);
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.mainContainer .content .library .gaming .game button {
+    background-color: transparent;
+    color: #666;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #666;
+    font-family: var(--SecondryFont);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mainContainer .content .library .gaming .game button:hover {
+    color: var(--PinkColor);
+    border: 1px solid var(--PinkColor);
+}
+
+.mainContainer .content .library .gaming .game .button {
+    color: var(--PinkColor);
+    border: 1px solid var(--PinkColor);
+}
+
+.mainContainer .footer {
+    width: 100%;
+    text-align: center;
+    color: rgba(240, 248, 255, 0.501);
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+    margin: 50px 0 10px;
+}
+
+.mainContainer .footer a {
+    color: var(--PinkColor);
+    text-decoration: none;
+}
+
+.mainContainer .footer span {
+    font-family: var(--MainFont);
+    color: var(--PinkColor);
+}
+
+@media (max-width: 1000px) {
+    .mainContainer .header {
+        flex-wrap: wrap;
+    }
+    .mainContainer .header .logo {
+        width: 20%;
+    }
+    .mainContainer .header .search {
+        width: 50%;
+    }
+    .mainContainer .header ul {
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .mainContainer .content .banner h1 {
+        font-size: 40px;
+    }
+    .mainContainer .content .popular h2,
+    .mainContainer .content .library h2 {
+        font-size: 30px;
+    }
+    .mainContainer .content .popular .cards {
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .popular .cards .card {
+        width: 27%;
+    }
+    .mainContainer .content .popular .cards .card .data h3 {
+        font-size: 15px;
+    }
+    .mainContainer .content .popular .cards .card .data p {
+        font-size: 14px;
+    }
+    .mainContainer .content .library .gaming .game h3 {
+        font-size: 16px;
+    }
+    .mainContainer .content .library .gaming .game {
+        grid-template-columns: repeat(3, 1fr);      
+    }
+    .mainContainer .content .library .gaming .game .button,
+    .mainContainer .content .library .gaming .game button {
+        padding: 5px 17px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .mainContainer .content .popular .cards {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainContainer .header {
+        flex-wrap: wrap;
+    }
+    .mainContainer .header .logo {
+        width: 80%;
+    }
+    .mainContainer .header .search {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .mainContainer .header ul {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}

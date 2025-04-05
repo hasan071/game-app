@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DarkGray: #212121;
+    --LightGray: #3e3e3e;
+    --PinkColor: #EA618F;
+    --MainFont: "Tektur", sans-serif;
+    --SecondryFont: "Caveat", cursive;
+}
+
+::selection {
+    color: aliceblue;
+    background-color: var(--PinkColor);
+}
+
+.mainContainer {
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding: 3vh 7% 2vh;
+}
+
+.mainContainer .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer .header .logo {
+    width: 15%;
+}
+
+.mainContainer .header .logo img {
+    width: 100%;
+}
+
+.mainContainer .header .hline {
+    width: 1px;
+    height: 60px;
+    background-color: var(--LightGray);
+}
+
+.mainContainer .header .search {
+    width: 22%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--LightGray);
+    border-radius: 25px;
+    padding: 9px 15px;
+    color: #555;
+    font-size: 20px;
+}
+
+.mainContainer .header .search input {
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: var(--SecondryFont);
+    outline: none;
+    color: var(--DarkGray);
+}
+
+.mainContainer .header ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.mainContainer .header ul li a {
+    color: var(--LightGray);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.mainContainer .header ul li a:hover,
+.mainContainer .header ul .active a {
+    color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background-color: var(--LightGray);
+    border-radius: 20px;
+    padding: 5px 20px;
+    transition: 1s;
+}
+
+.mainContainer .header ul .profile:hover {
+    background-color: var(--PinkColor);
+}
+
+.mainContainer .header ul .profile:hover a {
+    color: aliceblue;
+}
+
+
+.mainContainer .header ul .profile a {
+    color: var(--DarkGray);
+}
+
+
+.mainContainer .header ul .profile img {
+    border-radius: 50%;
+}
+
+.mainContainer .content {
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--LightGray);
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+.mainContainer .content .underHead {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.mainContainer .content .underHead .image1 img {
+    /* width: 50%; */
+    border-radius: 20px;
+}
+
+.mainContainer .content .underHead .image2 {
+    width: 67%;
+    background-image: url(../Images/feature-right.jpg);
+    background-size: 100% 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .content .underHead .image2 .fa-circle-play {
+    background-color: var(--PinkColor);
+    border-radius: 50%;
+    color: aliceblue;
+    font-size: 40px;
+}
+
+.mainContainer .content .title h2 {
+    color: aliceblue;
+    font-family: var(--MainFont);
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.mainContainer .content .LIVE .liveStream{
+    background-color: var(--DarkGray);
+    border-radius: 20px;
+    padding: 1vh 3%;
+    margin-top: 50px;
+}
+
+.mainContainer .content .LIVE .cards {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 20px;
+    background-color: var(--DarkGray);
+    padding: 2vh 3%;
+    margin-top: 10px;
+}
+
+.mainContainer .content .LIVE .liveStream .card {
+    width: 50%;
+    border-radius: 20px;
+    background-color: var(--LightGray);
+    padding: 2vh 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer .content .LIVE .liveStream .card .icon {
+    text-align: center;
+}
+
+.mainContainer .content .LIVE .liveStream .card .dataLeft h3,
+.mainContainer .content .LIVE .liveStream .card .icon p,
+.mainContainer .content .LIVE .liveStream .card .dataRight p {
+    color: aliceblue;
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+}
+
+.mainContainer .content .LIVE .liveStream .card .dataLeft p {
+    color: var(--DarkGray);
+    font-family: var(--SecondryFont);
+}
+
+.mainContainer .content .LIVE .liveStream .card .icon p .fa-star,
+.mainContainer .content .LIVE .liveStream .card .dataRight .fa-star,
+.mainContainer .content .otherGames .card .deatails .fa-star {
+    color: yellow;
+}
+
+.mainContainer .content .LIVE .liveStream .card .icon p .fa-download,
+.mainContainer .content .LIVE .liveStream .card .icon p .fa-hard-drive,
+.mainContainer .content .LIVE .liveStream .card .icon p .fa-gamepad,
+.mainContainer .content .LIVE .liveStream .card .dataRight .fa-download,
+.mainContainer .content .otherGames .card .deatails .fa-download {
+    color: var(--PinkColor);
+}
+
+.mainContainer .content .LIVE .liveStream .images {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainContainer .content .LIVE .liveStream .images img {
+    border-radius: 20px;
+    width: 31%;
+}
+
+.mainContainer .content .LIVE .liveStream .LongP {
+    margin-top: 30px;
+    width: 100%;
+    color: var(--LightGray);
+    font-family: var(--SecondryFont);
+    font-size: 25px;
+}
+
+.mainContainer .content .LIVE .liveStream .LongP span {
+    color: aliceblue;
+}
+
+.mainContainer .content .LIVE .liveStream .button button {
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+    color: var(--PinkColor);
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid var(--PinkColor);
+    transition: 1s;
+}
+
+.mainContainer .content .LIVE .liveStream .button button:hover {
+    color: aliceblue;
+    background-color: var(--PinkColor);
+    border: 1px solid aliceblue;
+}
+
+.mainContainer .content .otherGames {
+    width: 100%;
+    background-color: var(--DarkGray);
+    margin-top: 50px;
+    padding: 3vh 3%;
+    border-radius: 20px;
+}
+
+.mainContainer .content .otherGames h2 {
+    color: var(--PinkColor);
+    font-family: var(--MainFont);
+    font-size: 35px;
+}
+
+.mainContainer .content .otherGames h2 span {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+.mainContainer .content .otherGames .Games {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.mainContainer .content .otherGames .Games .cards {
+    width: 50%;
+}
+
+.mainContainer .content .otherGames .Games .card {
+    /* width: 50%; */
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 250px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.mainContainer .content .otherGames .card .game {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.mainContainer .content .otherGames .card .game .img img {
+    border-radius: 20px;
+}
+
+.mainContainer .content .otherGames .card .game .words h3,
+.mainContainer .content .otherGames .card .deatails p {
+    color: aliceblue;
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+}
+
+.mainContainer .content .otherGames .card .game .words p {
+    color: var(--LightGray);
+    font-family: var(--SecondryFont);
+}
+
+.mainContainer .footer {
+    width: 100%;
+    text-align: center;
+    color: rgba(240, 248, 255, 0.501);
+    font-family: var(--SecondryFont);
+    font-size: 20px;
+    margin: 50px 0 10px;
+}
+
+.mainContainer .footer a {
+    color: var(--PinkColor);
+    text-decoration: none;
+}
+
+.mainContainer .footer span {
+    font-family: var(--MainFont);
+    color: var(--PinkColor);
+}
+
+@media (max-width: 950px) {
+    .mainContainer .header {
+        flex-wrap: wrap;
+    }
+    .mainContainer .header .logo {
+        width: 20%;
+    }
+    .mainContainer .header .search {
+        width: 50%;
+    }
+    .mainContainer .header ul {
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .mainContainer .content .underHead {
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .underHead .image1 {
+        width: 100%;
+        text-align: center;
+    }
+    .mainContainer .content .underHead .image2 {
+        width: 100%;
+        height: 25vh;
+        text-align: center;
+    }
+    .mainContainer .content .LIVE .liveStream .cards {
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .LIVE .liveStream .cards .card {
+        width: 100%;
+    }
+    .mainContainer .content .LIVE .liveStream .images img {
+        width: 80%;
+    }
+    .mainContainer .content .LIVE .liveStream .images {
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .LIVE .liveStream .LongP p {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .mainContainer .content .otherGames .Games {
+        width: 50%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainContainer .header {
+        flex-wrap: wrap;
+    }
+    .mainContainer .header .logo {
+        width: 80%;
+    }
+    .mainContainer .header .search {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .mainContainer .header ul {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
