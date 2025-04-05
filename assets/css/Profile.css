@@ -79,7 +79,7 @@
     color: var(--LightGray);
     text-decoration: none;
     text-transform: capitalize;
-    font-family: var(--SecondryFont);
+    font-family: var(--MainFont);
     font-size: 20px;
     font-weight: bold;
     transition: 1s;
