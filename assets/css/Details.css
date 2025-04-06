@@ -388,6 +388,13 @@
     .mainContainer .content .underHead .image1 img {
         width: 100%;
     }
+    .mainContainer .content .LIVE .liveStream .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .mainContainer .content .LIVE .liveStream .cards .card {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1170px) {
