@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   justify-content: space-around;
+   margin-top: 20px;
+}
+
+.img1 {
+    background-image: url(WhatsApp\ Image\ 2025-05-05\ at\ 00.00.48_a5c9a77a.jpg);
+    background-size: 100% 100%;
+    width: 30%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px gold;
+}
+
+
+.img2 {
+    background-image: url(WhatsApp\ Image\ 2025-05-05\ at\ 00.00.49_cf1233a9.jpg);
+    background-size: 100% 100%;
+    width: 30%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px red;
+}
+
+.img3 {
+    background-image: url(orange.jpg);
+    background-size: 100% 100%;
+    width: 30%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px orange;
+}
+
+
+.img4 {
+    background-image: url(apple.jpg);
+    background-size: 100% 100%;
+    width: 30%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(189, 0, 0);
+}
+
+.img5 {
+    background-image: url(grapes.jpg);
+    background-size: 100% 100%;
+    width: 30%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(74, 74, 208);
+}
+
+.img6 {
+    background-image: url(banana.jpg);
+    background-size: 100% 100%;
+    width: 30%;
+    height: 30vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 5px yellow;
+}
+
+.images .hover1 h2 {
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.images .img1 .hover1 h2{
+    color: gold;
+}
+
+.images .img2 .hover1 h2{
+    color: red;
+}
+
+.images .img3 .hover1 h2{
+    color: orange;
+}
+
+.images .img4 .hover1 h2{
+    color: rgb(189, 0, 0);
+}
+
+.images .img5 .hover1 h2{
+    color: rgb(74, 74, 208);
+}
+
+.images .img6 .hover1 h2{
+    color: yellow;
+}
+
+button {
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    padding: 7px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.images button:hover {
+    color: black;
+    background-color: rgb(240, 248, 255);
+}
+
+.hover1 {
+    width: 100%;
+    height: 100%;
+    background-color: #232323cc;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 20px;
+    transform: rotateX(90deg);
+    transition: 2s;  
+    transform-origin: bottom;
+}
+
+.images .img1:hover .hover1 {
+    transform: rotate(0deg);
+}
+.images .img2:hover .hover1 {
+    transform: rotate(0deg);
+}
+.images .img3:hover .hover1 {
+    transform: rotate(0deg);
+}
+.images .img4:hover .hover1 {
+    transform: rotate(0deg);
+}
+.images .img5:hover .hover1 {
+    transform: rotate(0deg);
+}
+.images .img6:hover .hover1 {
+    transform: rotate(0deg);
+}
+
+
+
+
+
+@media (max-width: 690px) {
+    .images .img1 {
+        width: 40%;
+    }
+    .images .img2 {
+        width: 40%;
+    }
+    .images .img3{
+        width: 40%;
+    }
+    .images .img4 {
+        width: 40%;
+    }
+    .images .img5 {
+        width: 40%;
+    }
+    .images .img6 {
+        width: 40%;
+    }
+    .images {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 450px) {
+    .images .img1 {
+        width: 80%;
+    }
+    .images .img2 {
+        width: 80%;
+    }
+    .images .img3{
+        width: 80%;
+    }
+    .images .img4 {
+        width: 80%;
+    }
+    .images .img5 {
+        width: 80%;
+    }
+    .images .img6 {
+        width: 80%;
+    }
+    .images {
+        flex-wrap: wrap;
+    }
+}
